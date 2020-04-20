@@ -3,7 +3,12 @@
 
 // ==============================================
 // Landscape Mobile
-
+@media (max-height: 580px) {
+  #logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 // ==============================================
 // Portrait Mobile
@@ -12,5 +17,10 @@
     a {
       padding: 0 !important;
     }
+  }
+
+  #logo-footer {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
