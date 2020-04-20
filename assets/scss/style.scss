@@ -1,6 +1,8 @@
 @import 'utils';
 @import 'mobile';
 
+$main-color: #197ec5;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,16 +15,49 @@ a, li {
   text-decoration: none !important;
 }
 
+ul li {
+  list-style: none;
+}
+
+.bg-main-color {
+  background-color: $main-color;
+}
+
+.btn-main-color {
+  color: #fff;
+  background-color: $main-color;
+  border-color: $main-color;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 126, 197, 0.8);
+}
+
 // ==============================================
 // NAVBAR
 
 
 // CONTENT
-#content {
+.content {
   height: 100vh;
 }
 
 // FOOTER
-// #logo-footer {
-//   height: 100%;
-// }
+
+
+// RENTALS PAGE
+.tune-card .card-header {
+  position: relative;
+  background: url('/assets/images/map-bg.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70px;
+  width: 100%;
+}
