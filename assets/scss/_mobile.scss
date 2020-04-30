@@ -9,13 +9,16 @@
     }
   }
 
-
   // ==============================================
   // Landscape Mobile
   @media (max-height: 580px) {
     #logo-footer {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    #slogan-banner h1 {
+      font-size: 1.25em;
     }
   }
 
@@ -31,6 +34,10 @@
     #logo-footer {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    #slogan-banner h1 {
+      font-size: 1.25em;
     }
   }
 }
