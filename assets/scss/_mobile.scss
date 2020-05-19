@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   // Tablets
   #logo-banner-content {
     width: 50%;
@@ -9,35 +9,66 @@
     }
   }
 
-  // ==============================================
-  // Landscape Mobile
-  @media (max-height: 580px) {
-    #logo-footer {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #slogan-banner h1 {
-      font-size: 1.25em;
+  #sales-left {
+    height: 50vh !important;
+    h1 {
+      font-size: 3em;
     }
   }
 
-  // ==============================================
-  // Portrait Mobile
-  @media (max-width: 500px) {
-    #navbar {
-      a {
-        padding: 0 !important;
-      }
+  
+}
+
+
+// ==============================================
+// Portrait Mobile
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #navbar {
+    a {
+      padding: 0 !important;
+    }
+  }
+
+  #logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #slogan-banner h1 {
+    font-size: 1.25em;
+  }
+}
+
+#sales-left {
+  h1 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
+
+
+// ==============================================
+// Landscape Mobile
+@media (max-height: 580px) {
+  #logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #slogan-banner h1 {
+    font-size: 1.25em;
+  }
+
+  #sales-left {
+    height: 100vh !important;
+    h1 {
+      font-size: 2.5em;
     }
 
-    #logo-footer {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #slogan-banner h1 {
-      font-size: 1.25em;
+    #sales-left-content {
+      width: 90%;
     }
   }
 }
