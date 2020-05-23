@@ -9,20 +9,55 @@
     }
   }
 
-  #sales-left {
+  #sales-left,
+  #sales-right  {
     height: 50vh !important;
+  }
+
+  #sales-left-content {
     h1 {
       font-size: 3em;
     }
   }
 
-  
+  // ==============================================
+  // Landscape Mobile
+  @media (max-height: 580px) {
+    #logo-footer {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #slogan-banner h1 {
+      font-size: 1.25em;
+    }
+
+    #sales-left,
+    #sales-right {
+      height: 130vh !important;
+    }
+    #sales-left-content {
+      width: 90%;
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+
+    #sales-right-content {
+      h1 {
+        font-size: 2em !important;
+      }
+      h5, h3 {
+        font-size: 1em;
+      }
+    }
+  }
 }
 
 
 // ==============================================
 // Portrait Mobile
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 500px) {
   #navbar {
     a {
       padding: 0 !important;
@@ -37,38 +72,22 @@
   #slogan-banner h1 {
     font-size: 1.25em;
   }
-}
 
-#sales-left {
-  h1 {
-    font-size: 2.5em;
-  }
-  h3 {
-    font-size: 1.25em;
-  }
-}
-
-
-// ==============================================
-// Landscape Mobile
-@media (max-height: 580px) {
-  #logo-footer {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #slogan-banner h1 {
-    font-size: 1.25em;
-  }
-
-  #sales-left {
-    height: 100vh !important;
+  #sales-left-content {
     h1 {
       font-size: 2.5em;
     }
+    h3 {
+      font-size: 1.25em;
+    }
+  }
 
-    #sales-left-content {
-      width: 90%;
+  #sales-right-content {
+    h1 {
+      font-size: 2em !important;
+    }
+    h5, h3 {
+      font-size: 1em;
     }
   }
 }

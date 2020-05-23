@@ -1,4 +1,4 @@
-@import 'utils';
+// @import 'utils';
 @import 'mobile';
 
 $primary-color: #197ec5;
@@ -64,7 +64,8 @@ ul li {
   color: #fff;
 }
 
-#sales-left {
+#sales-left,
+#sales-right {
   height: 70vh;
 }
 
