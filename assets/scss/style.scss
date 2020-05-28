@@ -72,13 +72,22 @@ strong {
 
 #sales-left,
 #sales-right,
-#rentals-left {
+#rentals-left,
+#rentals-right {
   height: 70vh;
 }
 
 #sales-left {
   position: relative;
-  background: url('../images/home-page/sales-left-bg.jpg');
+  background: url('../images/home-page/category-tiles/sales-left-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rentals-right {
+  position: relative;
+  background: url('../images/home-page/category-tiles/rentals-left-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
