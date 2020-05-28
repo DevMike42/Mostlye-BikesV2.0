@@ -1,5 +1,7 @@
-// @import 'utils';
 @import 'mobile';
+
+// ==============================================
+// Utils
 
 $primary-color: #197ec5;
 
@@ -45,6 +47,10 @@ ul li {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.43);
+}
+
+strong {
+  font-weight: bold;
 }
 
 // ==============================================
