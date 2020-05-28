@@ -12,7 +12,9 @@
   #sales-left,
   #sales-right,
   #rentals-left,
-  #rentals-right  {
+  #rentals-right,
+  #service-left,
+  #service-right  {
     height: 50vh !important;
   }
 
@@ -37,10 +39,13 @@
     #sales-left,
     #sales-right,
     #rentals-left,
-    #rentals-right {
+    #rentals-right,
+    #service-left,
+    #service-right {
       height: 130vh !important;
     }
-    #sales-left-content {
+    #sales-left-content,
+    #service-left-content {
       width: 90%;
       h1 {
         font-size: 2.5em;
@@ -48,7 +53,8 @@
     }
 
     #sales-right-content,
-    #rentals-left-content {
+    #rentals-left-content,
+    #service-right-content {
       h1 {
         font-size: 2em !important;
       }
@@ -78,7 +84,17 @@
     font-size: 1.25em;
   }
 
-  #sales-left-content {
+#sales-left,
+#sales-right,
+#rentals-left,
+#rentals-right,
+#service-left,
+#service-right {
+  height: 80vh !important;
+}
+
+  #sales-left-content,
+  #service-left-content {
     h1 {
       font-size: 2.5em;
     }
@@ -88,7 +104,8 @@
   }
 
   #sales-right-content,
-  #rentals-left-content {
+  #rentals-left-content,
+  #service-right-content {
     h1 {
       font-size: 2em !important;
     }
