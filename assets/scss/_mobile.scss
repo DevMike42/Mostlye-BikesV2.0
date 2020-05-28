@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   // Tablets
   #logo-banner-content {
     width: 50%;
@@ -9,6 +9,20 @@
     }
   }
 
+  #sales-left,
+  #sales-right,
+  #rentals-left,
+  #rentals-right,
+  #service-left,
+  #service-right  {
+    height: 50vh !important;
+  }
+
+  #sales-left-content {
+    h1 {
+      font-size: 3em;
+    }
+  }
 
   // ==============================================
   // Landscape Mobile
@@ -17,20 +31,86 @@
       margin-left: auto;
       margin-right: auto;
     }
-  }
 
-  // ==============================================
-  // Portrait Mobile
-  @media (max-width: 500px) {
-    #navbar {
-      a {
-        padding: 0 !important;
+    #slogan-banner h1 {
+      font-size: 1.25em;
+    }
+
+    #sales-left,
+    #sales-right,
+    #rentals-left,
+    #rentals-right,
+    #service-left,
+    #service-right {
+      height: 130vh !important;
+    }
+    #sales-left-content,
+    #service-left-content {
+      width: 90%;
+      h1 {
+        font-size: 2.5em;
       }
     }
 
-    #logo-footer {
-      margin-left: auto;
-      margin-right: auto;
+    #sales-right-content,
+    #rentals-left-content,
+    #service-right-content {
+      h1 {
+        font-size: 2em !important;
+      }
+      h5, h3, h4 {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+
+// ==============================================
+// Portrait Mobile
+@media (min-width: 0px) and (max-width: 500px) {
+  #navbar {
+    a {
+      padding: 0 !important;
+    }
+  }
+
+  #logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #slogan-banner h1 {
+    font-size: 1.25em;
+  }
+
+#sales-left,
+#sales-right,
+#rentals-left,
+#rentals-right,
+#service-left,
+#service-right {
+  height: 80vh !important;
+}
+
+  #sales-left-content,
+  #service-left-content {
+    h1 {
+      font-size: 2.5em;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+
+  #sales-right-content,
+  #rentals-left-content,
+  #service-right-content {
+    h1 {
+      font-size: 2em !important;
+    }
+    h5, h3, h4 {
+      font-size: 1em;
     }
   }
 }
