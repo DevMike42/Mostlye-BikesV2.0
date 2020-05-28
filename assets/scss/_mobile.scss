@@ -10,7 +10,9 @@
   }
 
   #sales-left,
-  #sales-right  {
+  #sales-right,
+  #rentals-left,
+  #rentals-right  {
     height: 50vh !important;
   }
 
@@ -33,7 +35,9 @@
     }
 
     #sales-left,
-    #sales-right {
+    #sales-right,
+    #rentals-left,
+    #rentals-right {
       height: 130vh !important;
     }
     #sales-left-content {
@@ -43,11 +47,12 @@
       }
     }
 
-    #sales-right-content {
+    #sales-right-content,
+    #rentals-left-content {
       h1 {
         font-size: 2em !important;
       }
-      h5, h3 {
+      h5, h3, h4 {
         font-size: 1em;
       }
     }
@@ -82,11 +87,12 @@
     }
   }
 
-  #sales-right-content {
+  #sales-right-content,
+  #rentals-left-content {
     h1 {
       font-size: 2em !important;
     }
-    h5, h3 {
+    h5, h3, h4 {
       font-size: 1em;
     }
   }
