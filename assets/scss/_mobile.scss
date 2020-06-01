@@ -31,15 +31,22 @@
   }
 }
 
-  #service-left-content,
+  #service-left-content {
+    h1 {
+      font-size: 2em !important;
+    }
+    h3 {
+      font-size: 1.5em !important;
+    }
+  }
+
   #service-right-content {
     h1 {
       font-size: 2em !important;
     }
     h3 {
-      font-size: 1.5em;
+      font-size: 1.25em !important;
     }
-
   }
 
   // ==============================================
