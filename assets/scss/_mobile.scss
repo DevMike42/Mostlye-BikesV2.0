@@ -18,10 +18,28 @@
     height: 50vh !important;
   }
 
-  #sales-left-content {
+  #sales-left-content,
+  #rentals-right-content {
     h1 {
-      font-size: 3em;
+      font-size: 3em !important;
     }
+  }
+
+#rentals-left-content {
+  h4, h5 {
+    font-size: 1em;
+  }
+}
+
+  #service-left-content,
+  #service-right-content {
+    h1 {
+      font-size: 2em !important;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+
   }
 
   // ==============================================
@@ -62,6 +80,10 @@
         font-size: 1em;
       }
     }
+
+    #about-ebikes {
+      height: 100vh !important;
+    }
   }
 }
 
@@ -94,6 +116,7 @@
 }
 
   #sales-left-content,
+  #rentals-right-content,
   #service-left-content {
     h1 {
       font-size: 2.5em;
@@ -111,6 +134,16 @@
     }
     h5, h3, h4 {
       font-size: 1em;
+    }
+  }
+
+  #about-ebikes {
+    height: 70vh !important;
+    #about-ebikes-content {
+      margin-left: 1.5rem !important;
+      h1 {
+        font-size: 1.75em;
+      }
     }
   }
 }
