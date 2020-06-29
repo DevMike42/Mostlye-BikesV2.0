@@ -22,14 +22,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="dist/css/style.css">
 
   <title>Mostly e-Bikes | Electric Bike Shop | Oceanside, CA</title>
 </head>
 
 <body>
   <!-- NAVBAR -->
-  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light row p-4">
     <div class="container">
       <a href="index.html" class="navbar-brand p-3 w-25">
         <img class="img-fluid" src="assets/images/logo-nav.png" alt="Nav Logo">
@@ -60,93 +60,97 @@
   </nav>
 
   <!-- SHOWCASE SLIDER -->
-  <section id="home-showcase" class="w-100">
-    <div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li class="active" data-target="#showcaseCarousel" data-slide-to="0"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="1"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="2"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="3"></li>
-        <li data-target="#showcaseCarousel" data-slide-to="4"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item showcase-img active">
-          <img src="./assets/images/showcase-1.jpg" alt="showcase-1" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-1-mobile.jpg" alt="showcase-1"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">Gazelle Ultimate T10+</h1>
-            <h3 class="shadow-text">Comes stock at 500 WH, with the option for a 1000 WH double battery version!</h3>
+  <section id="home-showcase" class="row">
+    <div class="col-12 p-0">
+      <div id="showcaseCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#showcaseCarousel" data-slide-to="0"></li>
+          <li data-target="#showcaseCarousel" data-slide-to="1"></li>
+          <li data-target="#showcaseCarousel" data-slide-to="2"></li>
+          <li data-target="#showcaseCarousel" data-slide-to="3"></li>
+          <li data-target="#showcaseCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item showcase-img active">
+            <img src="./assets/images/showcase-1.jpg" alt="showcase-1" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-1-mobile.jpg" alt="showcase-1"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">Gazelle Ultimate T10+</h1>
+              <h3 class="shadow-text">Comes stock at 500 WH, with the option for a 1000 WH double battery version!</h3>
+            </div>
+          </div>
+          <div class="carousel-item showcase-img">
+            <img src="./assets/images/showcase-2.jpg" alt="showcase-2" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-2-mobile.jpg" alt="showcase-2"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">Electra Townie Go!</h1>
+              <h3 class="shadow-text">Go to the market. Go to the beach. Go get coffee. The Electra Townie® Go!</h3>
+            </div>
+          </div>
+          <div class="carousel-item showcase-img">
+            <img src="./assets/images/showcase-3.jpg" alt="showcase-3" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-3-mobile.jpg" alt="showcase-3"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">Tern Bikes</h1>
+              <h3 class="shadow-text">At Tern, we build bikes that defy expectations for what a folding bike can do.
+              </h3>
+            </div>
+          </div>
+          <div class="carousel-item showcase-img">
+            <img src="./assets/images/showcase-4.jpg" alt="showcase-4" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-4-mobile.jpg" alt="showcase-4"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">Civia Parkway</h1>
+              <h3 class="shadow-text">Only weighs 42lbs!</h3>
+            </div>
+          </div>
+          <div class="carousel-item showcase-img">
+            <img src="./assets/images/showcase-5.jpg" alt="showcase-4" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-5-mobile.jpg" alt="showcase-4"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">Surly Big Easy</h1>
+              <h3 class="shadow-text">Simplify the Haul With an Electric Cargo Bike!</h3>
+            </div>
+          </div>
+          <div class="carousel-item showcase-img">
+            <img src="./assets/images/showcase-6.jpg" alt="showcase-5" class="img-fluid d-none d-sm-block w-100">
+            <img src="./assets/images/showcase-6-mobile.jpg" alt="showcase-5"
+              class="d-block img-fluid d-block d-sm-none w-100">
+            <div class="carousel-caption text-white mb-1">
+              <h1 class="display-3 shadow-text">HAIBIKE</h1>
+              <h3 class="shadow-text">HAIBIKE, THE ePERFORMANCE BRAND</h3>
+            </div>
           </div>
         </div>
-        <div class="carousel-item showcase-img">
-          <img src="./assets/images/showcase-2.jpg" alt="showcase-2" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-2-mobile.jpg" alt="showcase-2"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">Electra Townie Go!</h1>
-            <h3 class="shadow-text">Go to the market. Go to the beach. Go get coffee. The Electra Townie® Go!</h3>
-          </div>
-        </div>
-        <div class="carousel-item showcase-img">
-          <img src="./assets/images/showcase-3.jpg" alt="showcase-3" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-3-mobile.jpg" alt="showcase-3"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">Tern Bikes</h1>
-            <h3 class="shadow-text">At Tern, we build bikes that defy expectations for what a folding bike can do.</h3>
-          </div>
-        </div>
-        <div class="carousel-item showcase-img">
-          <img src="./assets/images/showcase-4.jpg" alt="showcase-4" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-4-mobile.jpg" alt="showcase-4"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">Civia Parkway</h1>
-            <h3 class="shadow-text">Only weighs 42lbs!</h3>
-          </div>
-        </div>
-        <div class="carousel-item showcase-img">
-          <img src="./assets/images/showcase-5.jpg" alt="showcase-4" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-5-mobile.jpg" alt="showcase-4"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">Surly Big Easy</h1>
-            <h3 class="shadow-text">Simplify the Haul With an Electric Cargo Bike!</h3>
-          </div>
-        </div>
-        <div class="carousel-item showcase-img">
-          <img src="./assets/images/showcase-6.jpg" alt="showcase-5" class="img-fluid d-none d-sm-block w-100">
-          <img src="./assets/images/showcase-6-mobile.jpg" alt="showcase-5"
-            class="d-block img-fluid d-block d-sm-none w-100">
-          <div class="carousel-caption text-white mb-1">
-            <h1 class="display-3 shadow-text">HAIBIKE</h1>
-            <h3 class="shadow-text">HAIBIKE, THE ePERFORMANCE BRAND</h3>
-          </div>
-        </div>
+        <a href="#showcaseCarousel" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#showcaseCarousel" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-      <a href="#showcaseCarousel" class="carousel-control-prev" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a href="#showcaseCarousel" class="carousel-control-next" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
     </div>
   </section>
 
   <!-- SECTION (LOGO-BANNER) -->
-  <section id="logo-banner-main" class="bg-light">
-    <div id="logo-banner-content" class="d-flex align-items-center">
+  <section id="logo-banner-main" class="bg-light row">
+    <div id="logo-banner-content" class="d-flex align-items-center mx-auto">
       <div class="w-100 text-center my-4">
         <img id="logo-main" class="img-fluid mx-auto mb-2" src="./assets/images/logo-banner.png" alt="logo">
-        <p class="lead font-italic text-dark mb-0 text-uppercase">North County San Diego's premier electric bikeshop</p>
+        <p class="lead font-italic text-dark mb-0 text-uppercase">North County San Diego's premier electric bikeshop
+        </p>
       </div>
     </div>
   </section>
 
 
   <!-- SECTION (SLOGAN-BANNER) -->
-  <section id="slogan-banner" class="bg-primary-color text-white">
+  <section id="slogan-banner" class="bg-primary-color text-white row">
     <div class="map-overlay d-flex align-items-center">
       <h1 class="m-auto"><span class="mr-4">SALES</span>&#183 <span class="mx-4">REPAIR</span>&#183<span
           class="ml-4">RENTALS</span></h1>
@@ -174,13 +178,6 @@
     <div id="sales-right" class="col-xs-12 col-md-6 p-0 d-flex align-items-center">
       <div id="sales-right-content" class="text-center mx-auto">
         <i class="fas fa-bicycle fa-3x my-3"></i>
-        <!-- <h1 class="mb-3">Bicycle Sales</h1>
-        <h5 class="font-italic w-75 m-auto">We carry both ELECTRIC and
-          NON-ELECTRIC bicycles in a wide range of
-          styles and
-          sizes to
-          meet your cycling needs</h5> -->
-        <!-- <hr class="w-75 mx-auto"> -->
         <h1 class="mb-5">Brands We Sell</h1>
         <div class="row my-2 mx-auto">
           <div class="col-6 mb-2 d-flex justify-content-end pr-5">
@@ -336,7 +333,7 @@
   </section>
 
   <!-- SECTION (ABOUT E-BIKES) -->
-  <section id="about-ebikes" class="text-white">
+  <section id="about-ebikes" class="text-white row">
     <div class="dark-overlay d-flex align-items-center">
       <div id="about-ebikes-content" class="ml-5">
         <h1 class="pb-2">What exactly is an e-Bike?</h1>
@@ -352,7 +349,7 @@
   </section>
 
   <!-- SECTION (TESTIMONIALS) -->
-  <section id="testimonials" class="bg-white pb-5">
+  <section id="testimonials" class="bg-white pb-5 row">
     <div class="container">
       <div id="testimonials-heading" class="text-center text-dark py-5">
         <hr>

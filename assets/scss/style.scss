@@ -62,15 +62,12 @@ strong {
 }
 
 // ==============================================
-// NAVBAR
-
-
-// ==============================================
 //HOMEPAGE
+
 #slogan-banner {
   position: relative;
   height: 15vh;
-  background: url('../images/map-bg.jpg');
+  background: url('../../assets/images/map-bg.jpg');
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
@@ -85,11 +82,12 @@ strong {
 #service-left,
 #service-right {
   height: 70vh;
+  max-width: 100%;
 }
 
 #sales-left {
   position: relative;
-  background: url('../images/sales-left-bg.jpg');
+  background: url('../../assets/images/sales-left-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,7 +95,7 @@ strong {
 
 #rentals-right {
   position: relative;
-  background: url('../images/rentals-left-bg.jpg');
+  background: url('../../assets/images/rentals-left-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +103,7 @@ strong {
 
 #service-left {
   position: relative;
-  background: url('../images/service-left-bg.jpg');
+  background: url('../../assets/images/service-left-bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,18 +114,11 @@ strong {
 
 #about-ebikes {
   position: relative;
-  background: url('../images/about-ebikes-banner.jpg');
+  background: url('../../assets/images/about-ebikes-banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh;
-}
-
-
-
-// TEMPORARY
-.content {
-  height: 100vh;
 }
 
 // ==============================================
@@ -135,7 +126,7 @@ strong {
 
 .tune-card .card-header {
   position: relative;
-  background: url('/assets/images/map-bg.jpg');
+  background: url('../../assets/images/map-bg.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
