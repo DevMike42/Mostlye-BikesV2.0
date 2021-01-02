@@ -177,15 +177,15 @@
             <span class="text-white" aria-hidden="true">&times;</span>
           </button>
         </div>
-        <p class="text-center mx-4">After submitting the form, a rep wil be in contact shortly. Feel free to call us at
-          (442)
-          266-8137</p>
+        <p class="text-center mx-4 my-3">Submission of this form is simply a request. The reservation is not official
+          until
+          payment is received</p>
         <div class="modal-body">
           <script type="text/javascript">let submitted = false;</script>
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
             onload="if(submitted) {window.location='thankyou.html';}"></iframe>
           <form
-            action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSebPAAPxh-wnr7bThnsqWR0RqErc2H_vIFNKoNM9MENgLZX9g/formResponse"
+            action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSebPAAPxh-wnr7bThnsqWR0RqErc2H_vIFNKoNM9MENgLZX9g/formResponse"
             method="post" target="hidden_iframe" onsubmit="submitted=true;" id="rental-reservation-form">
             <div class="form-group">
               <label class="mb-0" for="name">First & Last Name</label>
@@ -222,7 +222,8 @@
               </div>
               <div class="form-group col-6">
                 <label class="mb-0" for="pick-up-time">Pick Up Time</label>
-                <input id="pick-up-time" class="form-control" type="time" value="10:00:00" id="drop-off-time">
+                <input id="pick-up-time" class="form-control" type="time" value="10:00:00" min="10:00:00" max="16:30:00"
+                  id="drop-off-time">
                 <input id="pick-up-hour" class="form-control" type="hidden" name="entry.1212237489_hour">
                 <input id="pick-up-min" class="form-control" type="hidden" name="entry.1212237489_minute">
                 <div class="invalid-feedback">
@@ -243,7 +244,8 @@
               </div>
               <div class="form-group col-6">
                 <label class="mb-0" for="drop-off-time">Drop Off Time</label>
-                <input id="drop-off-time" class="form-control" type="time" value="10:00:00">
+                <input id="drop-off-time" class="form-control" type="time" value="10:00:00" min="10:00:00"
+                  max="17:00:00">
                 <input id="drop-off-hour" class="form-control" type="hidden" name="entry.725081642_hour">
                 <input id="drop-off-min" class="form-control" type="hidden" name="entry.725081642_minute">
                 <div class="invalid-feedback">
@@ -281,7 +283,14 @@
               <label for="misc-info">Misc. Info</label>
               <textarea id="misc-info" class="form-control" name="entry.1095645109" id="misc-info" rows="3"></textarea>
             </div>
-            <button id="rental-form-submit" type="submit" value="submit" class="btn btn-primary-color">Submit</button>
+            <p class="text-center mx-4">After form is submitted, an invoice will be sent shortly, allowing for
+              submission of
+              payment online.</p>
+            <p class="text-center mx-4 mb-4">Any Questions? Feel free to call us at
+              (442)
+              266-8137</p>
+            <button id="rental-form-submit" type="submit" value="submit"
+              class="btn btn-block btn-primary-color">Submit</button>
           </form>
         </div>
       </div>
