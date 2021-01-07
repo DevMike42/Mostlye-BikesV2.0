@@ -12,7 +12,8 @@ $primary-color: #197ec5;
   font-family: 'Roboto', sans-serif;
 }
 
-a, li {
+a,
+li {
   color: #212529;
   text-decoration: none !important;
 }
@@ -55,7 +56,7 @@ strong {
 
 .shadow-text {
   text-shadow: 3px 3px 4px rgb(7, 7, 7);
-} 
+}
 
 .text-primary-color {
   color: $primary-color;
@@ -123,6 +124,15 @@ strong {
 
 // ==============================================
 // RENTALS PAGE
+
+#rentalModal {
+  #rental-disclaimer {
+    font-size: 0.85em;
+  }
+}
+
+// ==============================================
+// Service PAGE
 
 .tune-card .card-header {
   position: relative;

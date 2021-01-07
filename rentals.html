@@ -169,7 +169,7 @@
   <!-- RENTAL RESERVATION MODAL -->
   <div class="modal fade" id="rentalModal" tabindex="-1" role="dialog" aria-labelledby="rentalModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header bg-primary-color text-white">
           <h3 class="modal-title" id="rentalModalLabel">Bike Rental Form</h3>
@@ -180,6 +180,9 @@
         <p class="text-center mx-4 my-3">Submission of this form is simply a request. The reservation is not official
           until
           payment is received</p>
+        <p class="text-center mx-4 mb-3" id="rental-disclaimer">* For electric bike rentals, each rider must fill out a
+          liability waiver in
+          person. Rider's under the age of 18 must have a guardian present to sign the waiver.</p>
         <div class="modal-body">
           <script type="text/javascript">let submitted = false;</script>
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
@@ -187,102 +190,110 @@
           <form
             action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSebPAAPxh-wnr7bThnsqWR0RqErc2H_vIFNKoNM9MENgLZX9g/formResponse"
             method="post" target="hidden_iframe" onsubmit="submitted=true;" id="rental-reservation-form">
-            <div class="form-group">
-              <label class="mb-0" for="name">First & Last Name</label>
-              <input class="form-control" name="entry.1498582579" type="text" id="name" placeholder="Enter name">
-              <div class="invalid-feedback">
-                Please enter your full name
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="mb-0" for="email">Email Address</label>
-              <input class="form-control" name="entry.144638727" type="email" id="email" placeholder="Enter email">
-              <div class="invalid-feedback">
-                Please enter your email address
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="mb-0" for="phone">Cell Phone Number</label>
-              <input class="form-control" name="entry.2085143113" type="text" id="phone"
-                placeholder="Enter phone number">
-              <div class="invalid-feedback">
-                Please enter your contact phone number
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-group col-6">
-                <label for="pick-up-date" class="mb-0">Pick Up Date</label>
-                <input id="pick-up-date" type="date" class="form-control">
-                <input id="pick-up-year" type="hidden" name="entry.958639723_year" value="">
-                <input id="pick-up-month" type="hidden" name="entry.958639723_month" value="">
-                <input id="pick-up-day" type="hidden" name="entry.958639723_day" value="">
+            <div class="mb-4">
+              <div class="form-group">
+                <label class="mb-0" for="name">First & Last Name</label>
+                <input class="form-control" name="entry.1498582579" type="text" id="name" placeholder="Enter name">
                 <div class="invalid-feedback">
-                  Please choose a desired pick up day
+                  Please enter your full name
                 </div>
               </div>
-              <div class="form-group col-6">
-                <label class="mb-0" for="pick-up-time">Pick Up Time</label>
-                <input id="pick-up-time" class="form-control" type="time" value="10:00:00" min="10:00:00" max="16:30:00"
-                  id="drop-off-time">
-                <input id="pick-up-hour" class="form-control" type="hidden" name="entry.1212237489_hour">
-                <input id="pick-up-min" class="form-control" type="hidden" name="entry.1212237489_minute">
+              <div class="form-group">
+                <label class="mb-0" for="email">Email Address</label>
+                <input class="form-control" name="entry.144638727" type="email" id="email" placeholder="Enter email">
                 <div class="invalid-feedback">
-                  Please choose a desired pick up time
+                  Please enter your email address
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="mb-0" for="phone">Cell Phone Number</label>
+                <input class="form-control" name="entry.2085143113" type="text" id="phone"
+                  placeholder="Enter phone number">
+                <div class="invalid-feedback">
+                  Please enter your contact phone number
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="form-group col-6">
-                <label for="drop-off-date" class="mb-0">Drop Off Date</label>
-                <input id="drop-off-date" type="date" class="form-control">
-                <input id="drop-off-year" type="hidden" name="entry.852322727_year" value="2020">
-                <input id="drop-off-month" type="hidden" name="entry.852322727_month" value="04">
-                <input id="drop-off-day" type="hidden" name="entry.852322727_day" value="10">
-                <div class="invalid-feedback">
-                  Please choose a desired drop off day
+            <div class="row mb-4">
+              <div class="col-md-6 px-5">
+                <div class="form-group">
+                  <label for="pick-up-date" class="mb-0">Pick Up Date</label>
+                  <input id="pick-up-date" type="date" class="form-control">
+                  <input id="pick-up-year" type="hidden" name="entry.958639723_year" value="">
+                  <input id="pick-up-month" type="hidden" name="entry.958639723_month" value="">
+                  <input id="pick-up-day" type="hidden" name="entry.958639723_day" value="">
+                  <div class="invalid-feedback">
+                    Please choose a desired pick up day
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0" for="pick-up-time">Pick Up Time</label>
+                  <input id="pick-up-time" class="form-control" type="time" value="10:00:00" min="10:00:00"
+                    max="16:30:00" id="drop-off-time">
+                  <input id="pick-up-hour" class="form-control" type="hidden" name="entry.1212237489_hour">
+                  <input id="pick-up-min" class="form-control" type="hidden" name="entry.1212237489_minute">
+                  <div class="invalid-feedback">
+                    Please choose a desired pick up time
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="drop-off-date" class="mb-0">Drop Off Date</label>
+                  <input id="drop-off-date" type="date" class="form-control">
+                  <input id="drop-off-year" type="hidden" name="entry.852322727_year" value="2020">
+                  <input id="drop-off-month" type="hidden" name="entry.852322727_month" value="04">
+                  <input id="drop-off-day" type="hidden" name="entry.852322727_day" value="10">
+                  <div class="invalid-feedback">
+                    Please choose a desired drop off day
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0" for="drop-off-time">Drop Off Time</label>
+                  <input id="drop-off-time" class="form-control" type="time" value="10:00:00" min="10:00:00"
+                    max="17:00:00">
+                  <input id="drop-off-hour" class="form-control" type="hidden" name="entry.725081642_hour">
+                  <input id="drop-off-min" class="form-control" type="hidden" name="entry.725081642_minute">
+                  <div class="invalid-feedback">
+                    Please choose a desired drop off time
+                  </div>
                 </div>
               </div>
-              <div class="form-group col-6">
-                <label class="mb-0" for="drop-off-time">Drop Off Time</label>
-                <input id="drop-off-time" class="form-control" type="time" value="10:00:00" min="10:00:00"
-                  max="17:00:00">
-                <input id="drop-off-hour" class="form-control" type="hidden" name="entry.725081642_hour">
-                <input id="drop-off-min" class="form-control" type="hidden" name="entry.725081642_minute">
-                <div class="invalid-feedback">
-                  Please choose a desired drop off time
+              <div class="col-md-6 px-5">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="text-center lead mb-1">Qty of Bikes Desired</p>
+                  </div>
+                  <div class="form-group col-6">
+                    <label class="text-center mb-0" for="num-of-bikes">Electric</label>
+                    <input type="number" class="form-control" id="num-of-bikes" name="entry.445725920">
+                    <div class="invalid-feedback">
+                      Please choose a qty
+                    </div>
+                  </div>
+                  <div class="form-group col-6">
+                    <label class="text-center mb-0" for="num-of-ebikes">Non-Electric</label>
+                    <input type="number" class="form-control" id="num-of-ebikes" name="entry.707483717">
+                  </div>
+                  <div class="invalid-feedback">
+                    Please choose a qty
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0" for="rider-heights">Height of each Rider</label>
+                  <input class="form-control" type="text" id="rider-heights" name="entry.224316233">
+                  <div class="invalid-feedback">
+                    Please enter the height of each rider
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="misc-info">Misc. Info</label>
+                  <textarea id="misc-info" class="form-control" name="entry.1095645109" id="misc-info"
+                    rows="3"></textarea>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <p class="text-center lead mb-1">Qty of Bikes Desired</p>
-              </div>
-              <div class="form-group col-6">
-                <label class="text-center mb-0" for="num-of-bikes">Electric</label>
-                <input type="number" class="form-control" id="num-of-bikes" name="entry.445725920">
-                <div class="invalid-feedback">
-                  Please choose a qty
-                </div>
-              </div>
-              <div class="form-group col-6">
-                <label class="text-center mb-0" for="num-of-ebikes">Non-Electric</label>
-                <input type="number" class="form-control" id="num-of-ebikes" name="entry.707483717">
-              </div>
-              <div class="invalid-feedback">
-                Please choose a qty
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="mb-0" for="rider-heights">Height of each Rider</label>
-              <input class="form-control" type="text" id="rider-heights" name="entry.224316233">
-              <div class="invalid-feedback">
-                Please enter the height of each rider
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="misc-info">Misc. Info</label>
-              <textarea id="misc-info" class="form-control" name="entry.1095645109" id="misc-info" rows="3"></textarea>
-            </div>
+
+
+
             <p class="text-center mx-4">After form is submitted, an invoice will be sent shortly, allowing for
               submission of
               payment online.</p>
