@@ -125,7 +125,8 @@
   padding: 0;
   font-family: 'Roboto', sans-serif; }
 
-a, li {
+a,
+li {
   color: #212529;
   text-decoration: none !important; }
 
@@ -212,6 +213,9 @@ strong {
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh; }
+
+#rentalModal #rental-disclaimer {
+  font-size: 0.85em; }
 
 .tune-card .card-header {
   position: relative;
